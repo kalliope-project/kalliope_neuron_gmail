@@ -6,7 +6,7 @@ This neuron access to Gmail and gives the number of unread mails and their title
 
 ## Installation
 ```
-kalliope neuron-install --git-url "https://github.com/kalliope-project/kalliope_neuron_gmail.git"
+kalliope install --git-url "https://github.com/kalliope-project/kalliope_neuron_gmail.git"
 ```
 
 ## Options
