@@ -1,9 +1,12 @@
 ---
-   name: "gmail_checker"
-   type: "neuron"
-   author: "Kalliope project team"
+  name: "gmail_checker"
+  type: "neuron"
+  author: "Kalliope project team"
 
-   minimum_kalliope_version: 0.4.0
+  kalliope_supported_version:
+    - 0.4.0
 
-   tags:
-      - "Gmail"
+  tags:
+    - "Gmail"
+    - "email"
+    - "google"
