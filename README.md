@@ -71,3 +71,10 @@ Sign-in attempt prevented ... Someone just tried to sign in to your Google Accou
 ```
 
 You can allow this neuron to get un access to your email in your [Gmail account settings](https://www.google.com/settings/security/lesssecureapps).
+
+## License
+
+Copyright (c) 2016. All rights reserved.
+
+Kalliope is covered by the MIT license, a permissive free software license that lets you do anything you want with the source code, 
+as long as you provide back attribution and ["don't hold you liable"](http://choosealicense.com/). For the full license text see the [LICENSE.md](LICENSE.md) file.
