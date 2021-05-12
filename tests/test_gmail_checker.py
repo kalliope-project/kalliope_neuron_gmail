@@ -7,7 +7,7 @@ from kalliope.neurons.gmail_checker.gmail_checker import Gmail_checker
 class TestGmail_Checker(unittest.TestCase):
 
     def setUp(self):
-        self.client_secret_file="client_secret_file"
+        self.client_secret_file = "client_secret_file"
 
     def testParameters(self):
         def run_test(parameters_to_test):
@@ -18,7 +18,7 @@ class TestGmail_Checker(unittest.TestCase):
         parameters = dict()
         run_test(parameters)
 
-        # missing password
+        # missing client_secret_file
         parameters = {
             "client_secret_file": self.client_secret_file
         }

@@ -13,8 +13,7 @@ kalliope install --git-url https://github.com/kalliope-project/kalliope_neuron_g
 
 | parameter | required | default | choices | comment    |
 |-----------|----------|---------|---------|------------|
-| username  | YES      |         |         | User info. |
-| password  | YES      |         |         | User info. |
+| client_secret_file  | YES      |         |         | User credentials |
 
 ## Return Values
 
@@ -33,8 +32,7 @@ Simple example :
       - order: "Do I have emails"
     neurons:
       - gmail_checker:
-          username: "me@gmail.com"
-          password: "my_password"
+          client_secret_file: "client_secret.json"
           say_template: 
             -  "You have {{ unread }} new emails"    
 ```
@@ -46,8 +44,7 @@ A complex example that read subject emails. This is based on a file_template
       - order: "Do I have emails"
     neurons:
       - gmail_checker:
-          username: "me@gmail.com"
-          password: "my_password"
+          client_secret_file: "client_secret.json"
           file_template: /templates/my_email_template.j2
 ```
 
@@ -65,12 +62,8 @@ You have {{ unread }} email
 ```
 ## Notes
 
-Gmail now prevent some mailbox to be accessed from tier application. If you receive a mail like the following:
-```
-Sign-in attempt prevented ... Someone just tried to sign in to your Google Account mail@gmail.com from an app that doesn't meet modern security standards.
-```
+You have to generate your credentials like describe here : [https://github.com/jeremyephron/simplegmail#getting-started](https://github.com/jeremyephron/simplegmail#getting-started)
 
-You can allow this neuron to get un access to your email in your [Gmail account settings](https://www.google.com/settings/security/lesssecureapps).
 
 ## License
 
