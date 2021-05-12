@@ -13,7 +13,7 @@ kalliope install --git-url https://github.com/kalliope-project/kalliope_neuron_g
 
 | parameter | required | default | choices | comment    |
 |-----------|----------|---------|---------|------------|
-| client_secret_file  | YES      |         |         | User credentials |
+| client_secret_file  | YES      |         |         | Path to the user credentials file, relative to the neuron |
 
 ## Return Values
 
@@ -63,7 +63,7 @@ You have {{ unread }} email
 ## Notes
 
 You have to generate your credentials like describe here : [https://github.com/jeremyephron/simplegmail#getting-started](https://github.com/jeremyephron/simplegmail#getting-started)
-
+Will generate gmail_token.json
 
 ## License
 
